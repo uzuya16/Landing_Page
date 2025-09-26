@@ -142,9 +142,6 @@ li {
   list-style: none;
 }
 
-img {
-  vertical-align: top;
-}
 
 body {
   color: #1F2937;
@@ -158,8 +155,14 @@ body {
   padding: 0 20px;
 }
 
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  vertical-align: top;
+}
+
 #main header {
-  min-width: 85px;
   display: flex;
 }
 
@@ -843,7 +846,7 @@ body {
   margin-bottom: 57px;
 }
 
-#main .part4 .centerbox2 .box li figure {
+#main .part4 .centerbox2 .box li figure img {
   text-align: center;
   width: 100%;
 }
@@ -900,6 +903,8 @@ body {
   /* 포인트 컬러 */
 }
 
+.part4 .centerbox3 iframe {width:869px ; height:483px }
+
 .fixed {
   margin-right: 5px;
 }
@@ -918,7 +923,7 @@ body {
   font-family: 'Paperlogy-4Regular';
   text-align: center;
   border-radius: 15px;
-  width: 525px;
+  width: auto;
   height: 164px;
   margin: 0 auto;
   margin-top: 116px;
@@ -1670,17 +1675,19 @@ body {
   }
 
   header .centerbox nav .gnb li a {
-    font-size: 1em;
+    font-size: 15px;
+    white-space: nowrap;
   }
 
   #main header .centerbox nav .gnb {
     display: flex;
-    gap: 50px;
+    gap: 30px;
   }
 
   #main #visual .textbox .title p {
     text-align: center;
     letter-spacing: -2px;
+    
   }
 
   #main #visual .textbox .title p span {
@@ -1743,7 +1750,7 @@ body {
   }
 
   #main .part4 .centerbox2 .box {
-    width: 90%;
+    width: 80%;
   }
 
   #main .part4 .centerbox2 .box li h2 {
@@ -1846,6 +1853,12 @@ body {
     font-size: 40px;
   }
 
+  #main #visual .textbox .title figure img {width: 70%;}
+
+  #main #visual .textbox .title p {font-size: 35px;}
+
+  #main #visual .textbox .title p span{font-size: 50px;}
+
   .part3 .centerbox h2 {
     font-size: 26px;
     line-height: 1.4;
@@ -1924,6 +1937,8 @@ body {
   #main .part4 .centerbox1 .stamp {
     display: none;
   }
+
+  .part4 .centerbox3 iframe {width:869px ; height:483px }
 
   #main .part6 {
     min-height: auto;
