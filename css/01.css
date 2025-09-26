@@ -1,0 +1,1982 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'Pretendard-Thin';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-ExtraLight';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-Light';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-Medium';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-SemiBold';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-Bold';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-ExtraBold';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-Black';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Paperlogy-1Thin';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-1Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Paperlogy-2ExtraLight';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-2ExtraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Paperlogy-3Light';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-3Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Paperlogy-4Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-4Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Paperlogy-5Medium';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-5Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Paperlogy-6SemiBold';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-6SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Paperlogy-7Bold';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-7Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Paperlogy-8ExtraBold';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Paperlogy-9Black';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-9Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+body {
+  color: #1F2937;
+  overflow-x: hidden;
+}
+
+#main .centerbox {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+#main header {
+  min-width: 85px;
+  display: flex;
+}
+
+#main header .centerbox {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #437BCA;
+}
+
+#main header .centerbox h1 {
+  display: flex;
+  align-items: center;
+}
+
+#main header .centerbox nav {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+#main header .centerbox nav .gnb {
+  display: flex;
+  gap: 70px
+}
+
+#main header .centerbox nav .gnb li a {
+  /* padding: 10px 1vw */
+  display: block;
+  font-size: 18px;
+  font-family: 'Pretendard-Medium';
+}
+
+#main #visual {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+#main #visual .textbox {
+  padding-top: 100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#main #visual .textbox .title {
+  font-family: 'Paperlogy-2ExtraLight';
+  font-size: 60px;
+}
+
+#main #visual .textbox .title figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main #visual .textbox .title p {
+  text-align: center;
+  letter-spacing: -2px;
+}
+
+#main #visual .textbox .title p span {
+  font-family: 'Paperlogy-6SemiBold';
+  font-size: 80px;
+  position: relative;
+}
+
+#main #visual .textbox .title p span:nth-child(2) {
+  margin-left: -10px;
+}
+
+#main #visual .textbox .title p span::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 50%;
+  top: -10px;
+  transform: translate(-50%, 0);
+  background: url(../img/star.png) no-repeat;
+}
+
+#main #visual .textbox .title p span:nth-child(2)::before {
+  left: 45%;
+}
+
+
+#main #visual .textbox .bnt {
+  text-transform: uppercase;
+  padding: 11px 30px;
+  background: #1C49FF;
+  border-radius: 35px;
+  margin-top: 51px;
+  margin-bottom: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.7s ease-out;
+  text-decoration: none;
+  border: none;
+  border: 1px solid rgba(223, 190, 106, 0.3);
+}
+
+/* #main #visual .textbox .bnt:hover {
+  background: #ff4444;
+} */
+
+#main #visual .textbox .bnt a {
+  color: #D0DAE8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+
+
+#main #visual .textbox .bnt a figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+
+
+#main #visual .visualbox .imgbox {
+  display: flex;
+  gap: 34px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#main #visual .visualbox .imgbox ul {}
+
+#main #visual .visualbox .imgbox ul li {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main #visual .visualbox .imgbox ul li:nth-child(2) {
+  font-size: 24px;
+  color: #001122;
+}
+
+#main #visual .visualbox .imgbox ul li:nth-child(3) {
+  font-size: 20px;
+  color: #888888;
+}
+
+#main #visual .visualbox .imgbox li::before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--textC2);
+  position: absolute;
+  top: 12px;
+  left: 0;
+}
+
+#main #visual .visualbox .imgbox ul li img {
+  border-radius: 15px;
+}
+
+#main #visual .visualbox .imgbox ul li img {
+  border-radius: 15px;
+  transition: all 0.4s ease;
+  border: 3px solid transparent;
+}
+
+#main #visual .visualbox .imgbox ul:hover li img {
+  border: 3px solid #1c49ff;
+  /* 포인트 컬러 */
+  box-shadow: 0 0 20px rgba(28, 73, 255, 0.6);
+}
+
+
+
+/*백그라운드로 넣는 법 {background: url(../img/visual.png) center top no-repeat;height: 737px;} */
+
+#main #sectionbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 180px;
+}
+
+#main #sectionbox .part1 {
+  width: 100%;
+  /* height: 1058px; */
+  background: url(../img/bg1_color.png);
+  position: relative;
+}
+
+#main #sectionbox .part1 .alphabet {
+  width: 100%;
+}
+
+#main #sectionbox .part1 .alphabet figure {}
+
+#main #sectionbox .part1 .alphabet figure img {
+  position: absolute;
+}
+
+#main #sectionbox .part1 .alphabet figure img:nth-child(1) {
+  position: absolute;
+  left: 147px;
+  top: 238px;
+}
+
+#main #sectionbox .part1 .alphabet figure img:nth-child(2) {
+  position: absolute;
+  left: 383px;
+  top: 397px;
+}
+
+#main #sectionbox .part1 .alphabet figure img:nth-child(3) {
+  position: absolute;
+  right: 262px;
+  top: 446px;
+}
+
+#main #sectionbox .part1 .alphabet figure img:nth-child(4) {
+  position: absolute;
+  right: 371px;
+  bottom: 286px;
+}
+
+#main #sectionbox .part1 .alphabet figure img:nth-child(5) {
+  position: absolute;
+  left: 146px;
+  bottom: 389px;
+}
+
+#main #sectionbox .part1 .alphabet figure img:nth-child(6) {
+  position: absolute;
+  right: 404px;
+  top: 332px;
+}
+
+#main #sectionbox .part1 .alphabet figure img:nth-child(7) {
+  position: absolute;
+  right: 80px;
+  bottom: 192px;
+}
+
+#main #sectionbox .part1 .alphabet figure img:nth-child(8) {
+  position: absolute;
+  left: 364px;
+  top: 83px;
+}
+
+#main #sectionbox .part1 .alphabet figure img:nth-child(9) {
+  position: absolute;
+  left: 388px;
+  bottom: 197px;
+}
+
+#main #sectionbox .part1 .alphabet figure img:nth-child(10) {
+  position: absolute;
+  right: 100px;
+  top: 370px;
+}
+
+#main #sectionbox .part1 .part1_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 180px 0;
+}
+
+#main #sectionbox .part1 .part1_box li {}
+
+#main #sectionbox .part1 .part1_box li img {
+  border-radius: 15px;
+  border: 1px solid #CCD0D5;
+  overflow: hidden;
+  width: 100%;
+}
+
+#main #sectionbox .part1 .part1_box .text1 {
+  margin-top: 54px;
+  font-family: 'Paperlogy-6SemiBold';
+  font-size: 50px;
+  letter-spacing: -0.07em;
+  color: #fff;
+  text-align: center;
+}
+
+#main #sectionbox .part1 .part1_box .text2 {
+  margin-top: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #fff;
+  font-family: 'Paperlogy-6SemiBold';
+}
+
+
+
+/*  알파벳 효과  */
+@keyframes spin3D {
+  0% {
+    transform: rotateY(0deg) rotateX(0deg);
+  }
+
+  50% {
+    transform: rotateY(180deg) rotateX(20deg);
+  }
+
+  100% {
+    transform: rotateY(360deg) rotateX(0deg);
+  }
+}
+
+#main #sectionbox .part1 .alphabet figure img {
+  position: absolute;
+  animation: spin3D 2s linear infinite;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+/* 각 알파벳마다 시작 시간 다르게 (랜덤처럼 보이게) */
+#main #sectionbox .part1 .alphabet figure img:nth-child(1) {
+  animation-delay: .5s;
+}
+
+#main #sectionbox .part1 .alphabet figure img:nth-child(2) {
+  animation-delay: .2s;
+}
+
+#main #sectionbox .part1 .alphabet figure img:nth-child(3) {
+  animation-delay: .7s;
+}
+
+#main #sectionbox .part1 .alphabet figure img:nth-child(4) {
+  animation-delay: 1s;
+}
+
+#main #sectionbox .part1 .alphabet figure img:nth-child(5) {
+  animation-delay: .4s;
+}
+
+#main #sectionbox .part1 .alphabet figure img:nth-child(6) {
+  animation-delay: .5s;
+}
+
+#main #sectionbox .part1 .alphabet figure img:nth-child(7) {
+  animation-delay: .6s;
+}
+
+#main #sectionbox .part1 .alphabet figure img:nth-child(8) {
+  animation-delay: .7s;
+}
+
+#main #sectionbox .part1 .alphabet figure img:nth-child(9) {
+  animation-delay: .8s;
+}
+
+#main #sectionbox .part1 .alphabet figure img:nth-child(10) {
+  animation-delay: .9s;
+}
+
+
+
+
+#main .part2 .centerbox .title {
+  font-family: 'Paperlogy-7Bold';
+  font-size: 40px;
+  text-align: center;
+  margin-top: 180px;
+  margin-bottom: 111px;
+}
+
+#main .part2 .centerbox .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#main .part2 .centerbox .content li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin-right: 55px;
+}
+
+#main .part2 .centerbox .content li:nth-child(4) {
+  margin-right: 0;
+}
+
+#main .part2 .centerbox .content li figure {
+  width: 180px;
+  padding-bottom: 63px;
+}
+
+#main .part2 .centerbox .content li figure img {}
+
+#main .part2 .centerbox .content li p {
+  width: 248px;
+  height: 55px;
+  line-height: 28px;
+  color: #888888;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+
+/* 
+#main .part3 .centerbox .title p {font-family: 'Paperlogy-7Bold'; font-size: 20px; text-align: center; margin-top: 68px;}
+#main .part3 .centerbox .title h2 {font-family: 'Pretendard-Bold'; font-size: 40px; text-align: center; margin-top: 17px; margin-bottom: 54px;}
+#main .part3 .centerbox .title h2 span {color: #F97316;}
+#main .part3 .centerbox .content {width: 1107px; height: 449px; background: #1F2937; border-radius: 15px; display: flex;}
+#main .part3 .centerbox .content .textbox {font-family: 'Paperlogy-4Regular'; font-size: 17px; line-height: 25px; padding-left: 91px; padding-top: 151px;}
+#main .part3 .centerbox .content .textbox .tit {font-family: 'Pretendard-Bold'; font-size: 38px; line-height: 48px; padding-bottom: 17px;}
+#main .part3 .centerbox .content .grapbox {width: 444px; height: 317px; margin-top: 70px; margin-left: 119px; border: 1px solid #ff0000; display: flex; position: relative;}
+
+#main .part3 .centerbox .content .tet {position: absolute; top: 0; right: 0;} */
+
+#main .part3 {
+  width: 100%;
+  background: #0A0E0F;
+  margin-top: 239px;
+  color: #fff;
+  position: relative;
+}
+
+#main .part3 .centerbox {
+  display: flex;
+  flex-direction: column;
+  padding: 180px 0;
+}
+
+.part3 .centerbox h2 {
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Pretendard-Bold';
+  margin-top: 17px;
+  margin-bottom: 54px;
+}
+
+.part3 .centerbox h2 .s_text {
+  font-family: 'Paperlogy-6SemiBold';
+  font-size: 20px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.part3 .centerbox h2 span {}
+
+.part3 .centerbox h2 em {
+  font-style: normal;
+  color: #F97316;
+}
+
+.part3 .centerbox .content {
+  background: #1F2937;
+  border-radius: 15px;
+  padding: 90px 70px;
+  display: flex;
+  gap: 100px;
+  justify-content: space-between;
+  min-height: 247px;
+}
+
+.part3 .centerbox .content>li {
+  width: 45%;
+}
+
+.part3 .centerbox .content li strong {
+  color: #fff;
+  font-size: 38px;
+}
+
+.part3 .centerbox .content li p {
+  color: #fff;
+  font-size: 17px;
+  margin-top: 20px;
+  font-family: 'Paperlogy-3Light';
+  line-height: 25px;
+}
+
+.part3 .graph_box {
+  flex-grow: 0;
+  width: 400px;
+}
+
+.part3 .graph_box .graph {
+  display: flex;
+  justify-content: center;
+}
+
+.part3 .graph_box .graph li {
+  min-height: 200px;
+  width: 40%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.part3 .graph_box .title {
+  display: flex;
+  font-size: 20px;
+  color: #828282;
+  text-align: center;
+  line-height: 50px;
+  /* border-top: 1px solid #828384; */
+  justify-content: center;
+  gap: 85px;
+  border-top: 1px solid #C2C2C2;
+}
+
+.part3 .graph_box .title li {}
+
+.part3 .graph_box .graph>li .gra {
+  height: 200px;
+  background: linear-gradient(180deg, #1c49ff, #080f24);
+  width: 50%;
+  border-radius: 15px 15px 0 0;
+  color: #fff;
+  padding-top: 8px;
+  box-sizing: border-box;
+}
+
+.part3 .content>li.graph_wrap {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+.part3 .graph_wrap .text {
+  position: absolute;
+  top: 0%;
+  right: 11%;
+  z-index: 10;
+}
+
+.part3 .centerbox .content li.graph_wrap {
+  position: relative;
+}
+
+/* liner 선 // linear-gradient그라데이션 */
+
+/* .part3 .graph_box .graph li .gra {animation: graph 2s forwards;}
+@keyframes graph {
+    0% {height: 40px;}
+    100% {height: 100px;}
+}
+
+.part3 .graph_box .graph li:first-child .gra {animation: graph2 2s forwards;}
+@keyframes graph2 {
+    0% {height: 40px;}
+    100% {height: 190px;}
+}
+ */
+
+
+
+
+#main .part4 {}
+
+#main .part4 .centerbox1 {
+  position: relative;
+}
+
+#main .part4 .centerbox1 .textbox {
+  text-align: center;
+  margin-top: 180px;
+}
+
+#main .part4 .centerbox1 .textbox p:nth-child(1) {
+  font-family: 'Paperlogy-6SemiBold';
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+#main .part4 .centerbox1 .textbox p:nth-child(2) {
+  font-family: 'Paperlogy-5Medium';
+  font-size: 75px;
+}
+
+#main .part4 .centerbox1 .textbox p span {
+  font-family: 'Paperlogy-3Light';
+}
+
+#main .part4 .centerbox1 .num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 85px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+#main .part4 .centerbox1 .num li {
+  width: 263px;
+  height: 219px;
+  background: #1F2937;
+  margin: 0 9px;
+  border-radius: 15px;
+  font-family: 'Pretendard-SemiBold';
+  font-size: 150px;
+  color: #fff;
+  text-align: center;
+  line-height: 219px;
+}
+
+#main .part4 .centerbox1 .text {
+  font-family: 'Pretendard-Medium';
+  font-size: 40px;
+  margin-top: 77px;
+  text-align: center;
+}
+
+#main .part4 .centerbox1 .text p:nth-child(1) {
+  padding-bottom: 18px;
+}
+
+#main .part4 .centerbox1 .stamp img {
+  position: absolute;
+  top: 72%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+}
+
+#main .part4 .aiimg {
+  text-align: center;
+  margin-top: 341px;
+  margin-bottom: 43px;
+}
+
+#main .part4 .centerbox2 {
+  display: flex;
+  gap: 31px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#main .part4 .centerbox2 .box {
+  width: 406px;
+  height: 686px;
+  background: #1F2937;
+  border-radius: 15px;
+}
+
+#main .part4 .centerbox2 .box:nth-child(1) {
+  margin-left: 0;
+}
+
+#main .part4 .centerbox2 .box li {
+  padding: 0 38px;
+}
+
+#main .part4 .centerbox2 .box li h2 {
+  font-family: 'Paperlogy-4Regular';
+  font-size: 50px;
+  color: #fff;
+  margin: 50px 0;
+}
+
+#main .part4 .centerbox2 .box li p {
+  height: 100px;
+  font-size: 17px;
+  line-height: 25px;
+  font-family: 'Paperlogy-4Regular';
+  color: #C4CED8;
+  text-align: left;
+  word-break: break-word;
+  margin-bottom: 57px;
+}
+
+#main .part4 .centerbox2 .box li figure {
+  text-align: center;
+  width: 100%;
+}
+
+#main .part4 .centerbox2 .box li:nth-child(3) {
+  color: #F8FAFC;
+  font-family: 'Paperlogy-4Regular';
+  font-size: 20px;
+  line-height: 25px;
+  margin-top: 24px;
+}
+
+#main .part4 .centerbox3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#main .part4 .centerbox3 span {
+  margin-top: 50px;
+  margin-bottom: 234px;
+  font-family: 'Paperlogy-4Regular';
+  font-size: 48px;
+  line-height: 52px;
+}
+
+#main .part4 .centerbox2 .box {
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+#main .part4 .centerbox2 .box:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* 이미지 확대 효과 */
+#main .part4 .centerbox2 .box li figure img {
+  transition: transform 0.5s ease;
+}
+
+#main .part4 .centerbox2 .box:hover li figure img {
+  transform: scale(1.1);
+}
+
+/* 제목 색상 변화 */
+#main .part4 .centerbox2 .box li h2 {
+  transition: color 0.3s ease;
+}
+
+#main .part4 .centerbox2 .box:hover li h2 {
+  color: #1c49ff;
+  /* 포인트 컬러 */
+}
+
+.fixed {
+  margin-right: 5px;
+}
+
+.count {
+  min-width: 2ch;
+  text-align: center;
+}
+
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F97316;
+  font-family: 'Paperlogy-4Regular';
+  text-align: center;
+  border-radius: 15px;
+  width: 525px;
+  height: 164px;
+  margin: 0 auto;
+  margin-top: 116px;
+  margin-bottom: 212px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.btn a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #fff;
+  font-size: 40px;
+}
+
+.bttt {
+  position: relative;
+  overflow: hidden;
+  /* 라이트 효과 잘리게 */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bttt:hover {
+  transform: scale(1.03);
+  box-shadow: 8px 12px 25px rgba(0, 0, 0, 0.35);
+}
+
+/* 라이트 스윕 효과 */
+.bttt::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0.2) 100%);
+  transform: skewX(-20deg);
+}
+
+.bttt:hover::before {
+  animation: shine 1s ease forwards;
+}
+
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+
+
+
+
+
+#main .part5 {
+  width: 100%;
+}
+
+#main .part5 .title {
+  background: #1F2937;
+  text-align: center;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+#main .part5 .title span {
+  font-family: 'Paperlogy-4Regular';
+  font-size: 60px;
+  color: #F8FAFC;
+}
+
+#main .part5 .title figure {
+  position: absolute;
+  top: 10%;
+  left: 61%;
+  transform: translate(-50%, -50%);
+}
+
+#main .part5 .title figure img {}
+
+#main .part5 .reviewbox {
+  /* display: flex; gap: 40px; */
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+#main .part5 .review {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+#main .part5 .review:last-child {
+  margin-right: 0;
+}
+
+#main .part5 .review li {
+  text-align: center;
+  font-family: 'Paperlogy-4Regular';
+  font-size: 18px;
+}
+
+#main .part5 .review li:last-child {
+  margin-top: 37px;
+  margin-bottom: 180px;
+}
+
+#main .part5 .slide-container {
+  display: flex;
+  width: max-content;
+  animation: slideLeft 30s linear infinite;
+}
+
+/* 움직이는 애니메이션 */
+@keyframes slideLeft {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+#main .part6 .centerbox {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+#main .part6 {
+  width: 100%;
+  min-height: 1063px;
+  background: url(../img/bg2.png) no-repeat center/cover;
+  position: relative;
+}
+
+#main .part6 .text_box {
+  padding-top: 140px;
+}
+
+#main .part6 .text_box em {
+  font-family: 'Pretendard-Regular';
+  font-size: 40px;
+  color: #22D3EE;
+  display: block;
+}
+
+#main .part6 .text_box p {
+  font-family: 'Pretendard-Thin';
+  font-size: 70px;
+  color: #fff;
+  margin-top: 10px;
+  line-height: 1.2;
+}
+
+#main .part6 .text_box p:last-child {
+  font-family: 'Pretendard-Light';
+  font-size: 32px;
+  color: #fff;
+  line-height: 1.3;
+  text-align: right;
+  position: absolute;
+  top: 700px;
+  left: 114px;
+}
+
+#main .part6 .text_box strong {
+  font-family: 'Pretendard-SemiBold';
+}
+
+#main .part6 .text_box span {
+  font-size: 40px;
+}
+
+#main .part6 .phone_1 {
+  position: absolute;
+  top: 138px;
+  left: 730px;
+  animation: phone1 2.6s infinite alternate ease-in-out;
+}
+
+#main .part6 .phone_2 {
+  position: absolute;
+  top: 419px;
+  left: 482px;
+  animation: phone2 2.6s infinite alternate ease-in-out;
+  animation-delay: 0.3s
+}
+
+#main .part6 .star {
+  position: absolute;
+  top: 647px;
+  left: 40px;
+}
+
+
+@keyframes phone2 {
+  0% {
+    top: 419px
+  }
+
+  50% {
+    top: 399px
+  }
+
+  100% {
+    top: 419px
+  }
+}
+
+@keyframes phone1 {
+  0% {
+    top: 138px
+  }
+
+  50% {
+    top: 108px
+  }
+
+  100% {
+    top: 138px
+  }
+}
+
+/* #main .part7 {margin: 180px 0;}
+#main .part7 .titlebox {}
+#main .part7 .title {display: flex; gap: 24px; justify-content: center; align-items: center; }
+#main .part7 .title li {font-size: 40px; font-family: 'Paperlogy-4Regular'; margin-bottom: 53px;}
+#main .part7 .title li a {color: #fff;}
+#main .part7 .title li:first-child {background: #FF4242; padding: 58px 47px; border-radius: 15px;}
+#main .part7 .title li:last-child {background: #CCCCCC; padding: 58px 47px; border-radius: 15px; }
+#main .part7 .red {width: 100%; height: 404px; border: 5px solid #FF1358; border-radius: 15px;}
+#main .part7 .red .left {}
+#main .part7 .red .left li.best {font-family: 'Paperlogy-4Regular'; font-size: 30px; background: #FF4242; padding: 32px 16px; color: #fff;}
+#main .part7 .red .right {}
+#main .part7 .red .right li {}
+#main .part7 .blue {}
+#main .part7 .blue .left {}
+#main .part7 .blue .left li {}
+#main .part7 .blue .right {}
+#main .part7 .blue .right li {}
+#main .part7 .text {} */
+
+
+.part7 {
+  margin-top: 149px;
+}
+
+.part7 .titlebox {}
+
+.part7 .titlebox .title {
+  display: flex;
+  font-family: 'Paperlogy-5Medium';
+  font-size: 40px;
+  gap: 24px;
+  justify-content: center;
+}
+
+.part7 .titlebox .title li {
+  padding: 34px 24px;
+  background: #CCCCCC;
+  border-radius: 15px;
+}
+
+.part7 .titlebox .title li.on {
+  background: #FF4242;
+}
+
+.part7 .titlebox .title li a {
+  color: #fff;
+}
+
+.part7 .titlebox .red,
+.part7 .titlebox .blue {
+  width: 100%;
+  max-width: 1278px;
+  height: auto;
+  border: 5px solid;
+  margin-top: 53px;
+  border-radius: 15px;
+  display: flex;
+  position: relative;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 30px auto;
+}
+
+.part7 .titlebox .red {border-color: #FF1358;}
+.part7 .titlebox .blue {border-color: #1E3A8A;}
+
+/* .part7 .titlebox .blue {
+  width: 1278px;
+  height: 484px;
+  border: 5px solid #1E3A8A;
+  margin-top: 53px;
+  border-radius: 15px;
+  display: flex;
+  position: relative;
+} */
+
+.part7 .titlebox .red .left .best {
+  display: flex;
+  margin-top: 30px;
+  margin-left: 35px;
+}
+
+.part7 .titlebox .red .left .best li {
+  padding: 16px 35px;
+  font-family: 'Paperlogy-5Medium';
+  margin-right: 15px;
+}
+
+.part7 .titlebox .red .left .best li:nth-child(1) {
+  background: #FF4242;
+  color: #fff;
+  border-radius: 30px;
+  font-size: 30px;
+}
+
+.part7 .titlebox .red .left .best li:nth-child(2) {
+  background: #DADADA;
+  color: #FF4242;
+  border-radius: 30px;
+  font-size: 30px;
+}
+
+.part7 .titlebox .red .left .left_last li {
+  font-family: 'Paperlogy-4Regular';
+  font-size: 20px;
+  margin-left: 35px;
+  margin-bottom: 10px;
+}
+
+.part7 .titlebox .red .left .left_last li:nth-child(1) {
+  font-family: 'Paperlogy-5Medium';
+  font-size: 55px;
+  margin-left: 35px;
+  margin-top: 45px;
+  color: #1F2937;
+}
+
+.part7 .titlebox .red .left .left_last li:nth-child(2) {
+  margin-top: 35px;
+}
+
+.part7 .titlebox .red .left .left_last li:nth-child(4) {
+  color: #FF4242
+}
+
+.part7 .titlebox .red .left .left_last li:nth-child(5) {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background: #DADADA;
+  padding: 14px 32px;
+  border-radius: 30px;
+  margin-top: 24px;
+  font-size: 32px;
+  font-family: 'Paperlogy-5Medium';
+}
+
+.part7 .titlebox .red .right {
+  font-family: 'Pretendard-SemiBold';
+}
+
+.part7 .titlebox .red .right li:nth-child(1) {
+  position: absolute;
+  right: 36px;
+  top: 0;
+}
+
+.part7 .titlebox .red .right li:nth-child(2) {
+  font-size: 30px;
+  color: #898989;
+  padding-left: 240px;
+  padding-top: 127px;
+  text-decoration: line-through #080f24;
+}
+
+.part7 .titlebox .red .right li:nth-child(3) {
+  font-size: 48px;
+  padding-left: 145px;
+  padding-top: 50px;
+  font-family: 'Pretendard-Bold';
+}
+
+.part7 .titlebox .red .right li:nth-child(4) {
+  position: absolute;
+  right: 36px;
+  bottom: 28px;
+  padding: 23px 80px;
+  background: #FF4242;
+  letter-spacing: 0.3em;
+  font-size: 30px;
+  border-radius: 100px;
+}
+
+.part7 .titlebox .red .left .left_last li:nth-child(5) {
+  font-size: 30px;
+}
+
+.part7 .titlebox .red .right li a {
+  color: #fff;
+  letter-spacing: 0.3em;
+}
+
+
+
+
+
+
+.part7 .titlebox .blue .left li {
+  font-family: 'Paperlogy-4Regular';
+  font-size: 20px;
+  color: #1F2937;
+}
+
+.part7 .titlebox .blue .left li:nth-child(1) {
+  display: inline-block;
+  padding: 16px 30px;
+  font-family: 'Paperlogy-5Medium';
+  font-size: 30px;
+  color: #fff;
+  background: #1E3A8A;
+  border-radius: 30px;
+  text-align: center;
+  margin: 45px 35px;
+}
+
+.part7 .titlebox .blue .left li:nth-child(2) {
+  font-family: 'Paperlogy-5Medium';
+  font-size: 55px;
+  color: #1F2937;
+  margin-left: 35px;
+  margin-bottom: 35px;
+}
+
+.part7 .titlebox .blue .left li:nth-child(3) {
+  margin-left: 35px;
+  margin-bottom: 10px;
+}
+
+.part7 .titlebox .blue .left li:nth-child(4) {
+  color: #1E3A8A;
+  margin-left: 35px;
+  margin-bottom: 10px;
+}
+
+
+.part7 .titlebox .blue .right {
+  font-family: 'Pretendard-SemiBold';
+}
+
+.part7 .titlebox .blue .right li:nth-child(1) {
+  position: absolute;
+  right: 36px;
+  top: 0;
+}
+
+.part7 .titlebox .blue .right li:nth-child(2) {
+  font-size: 30px;
+  color: #898989;
+  padding-left: 240px;
+  padding-top: 127px;
+  text-decoration: line-through #080f24;
+}
+
+.part7 .titlebox .blue .right li:nth-child(3) {
+  font-size: 48px;
+  padding-left: 145px;
+  padding-top: 50px;
+  font-family: 'Pretendard-Bold';
+}
+
+.part7 .titlebox .blue .right li:nth-child(4) {
+  position: absolute;
+  right: 36px;
+  bottom: 28px;
+  padding: 23px 80px;
+  background: #1E3A8A;
+  letter-spacing: 30%;
+  font-size: 30px;
+  border-radius: 100px;
+}
+
+.part7 .titlebox .blue .right li a {
+  color: #fff;
+  letter-spacing: 0.3em;
+}
+
+.part7 .titlebox .blue .left ul::after {
+  content: "영어영영어 습관 완성 프로그램 제공";
+  display: inline-flex;
+  align-items: center;
+  padding: 14px 32px;
+  border-radius: 30px;
+  margin-top: 24px;
+  font-family: 'Paperlogy-5Medium';
+  font-size: 32px;
+  background: #DADADA;
+  color: #333;
+  margin-left: 35px;
+  visibility: hidden;
+}
+
+.text_last {
+  font-family: 'Paperlogy-5Medium';
+  color: #9A9A9A;
+  font-size: 25px;
+}
+
+.text_last p:first-child {
+  margin-top: 38px;
+  margin-bottom: 18px;
+}
+
+.text_last p:last-child {
+  text-indent: 10px;
+}
+
+.btn_box {
+  width: 100%;
+  background: #1E3A8A;
+  text-align: center;
+  padding: 40px 0;
+  margin-top: 175px;
+}
+
+.btn_box a {
+  display: inline-block;
+  background: #FF6600;
+  color: #fff;
+  padding: 15px 40px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-family: 'Paperlogy-5Medium';
+  font-size: 40px;
+}
+
+
+
+
+
+.part7 .titlebox .red .left,
+.part7 .titlebox .blue .left,
+.part7 .titlebox .red .right,
+.part7 .titlebox .blue .right {
+  flex: 1;
+  padding: 10px;
+}
+
+
+
+.SMN_effect-49 a {
+  transition: 0.35s;
+}
+
+.SMN_effect-49 a:hover {
+  text-shadow: 0 0 15px #FFFFFF;
+  -moz-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+
+
+
+
+@media (max-width: 1124px) {
+  .part3 .centerbox .content {
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    padding: 60px 40px;
+  }
+
+  .part3 .centerbox .content>li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .part3 .graph_box {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .part3 .graph_box .title {
+    gap: 40px;
+    font-size: 18px;
+  }
+
+  #main .part4 .centerbox1 .textbox p:nth-child(1) {
+    font-size: 36px;
+  }
+
+  #main .part4 .centerbox1 .textbox p:nth-child(2) {
+    font-size: 55px;
+  }
+
+  #main .part4 .centerbox1 .num li {
+    width: 180px;
+    height: 150px;
+    font-size: 100px;
+    line-height: 150px;
+  }
+
+  #main .part4 .centerbox1 .text {
+    font-size: 28px;
+  }
+
+  #main .part4 .centerbox1 .stamp img {
+    width: 120px;
+    /* 스탬프 축소 */
+  }
+
+  #main .part4 .aiimg img {
+    text-align: center;
+    width: 50%;
+  }
+
+  #main .part4 .centerbox2 {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  #main .part4 .centerbox2 .box {
+    width: calc(50% - 20px);
+    height: auto;
+    /* 높이 자동으로 */
+    padding-bottom: 30px;
+  }
+
+  #main .part4 .centerbox2 .box li h2 {
+    font-size: 32px;
+  }
+
+  #main .part4 .centerbox2 .box li p {
+    font-size: 15px;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  #main .part4 .centerbox2 .box li:nth-child(3) {
+    font-size: 18px;
+  }
+
+  #main .part4 .bnt {
+    width: 400px;
+    height: 120px;
+    font-size: 28px;
+  }
+
+  #main .part4 .bnt a {
+    font-size: 28px;
+  }
+
+  #main .part4 .centerbox3 iframe {
+    width: 100%;
+    max-width: 700px;
+    height: 400px;
+  }
+
+  #main .part4 .centerbox3 span {
+    font-size: 32px;
+    margin-bottom: 150px;
+  }
+
+  #main #five .title figure img {
+    display: none;
+  }
+
+  #main .part6 .text_box em {
+    font-size: 28px;
+  }
+
+  #main .part6 .text_box p {
+    font-size: 48px;
+  }
+
+  #main .part6 .text_box p:last-child {
+    font-size: 20px;
+  }
+
+  #main .part6 .phone_1 {
+    left: 50%;
+  }
+
+  #main .part6 .phone_1 img {
+    width: 200px;
+  }
+
+  #main .part6 .phone_2 {
+    left: 40%;
+  }
+
+  #main .part6 .phone_2 img {
+    width: 180px;
+  }
+
+  #main .part6 .star {
+    width: 60px;
+  }
+  .part7 .titlebox .red,
+  .part7 .titlebox .blue {
+    flex-direction: row; /* 좌/우 나란히 */
+    align-items: flex-start;
+    height: 484px;       /* PC에서만 높이 고정 */
+  }
+  .part7 .titlebox .red .right li:nth-child(2),
+  .part7 .titlebox .blue .right li:nth-child(2){
+    font-size: 20px; text-align: right; 
+  }
+  .part7 .titlebox .red .right li:nth-child(3),
+  .part7 .titlebox .blue .right li:nth-child(3){
+    font-size: 25px; padding-top: 20px; text-align: right;
+  }
+  .part7 .titlebox .red .left .left_last li:nth-child(5),
+  .part7 .titlebox .blue .left .left_last li:nth-child(5){
+    margin-top: 0; font-size: 20px; text-align: center;
+  }
+
+}
+
+
+@media screen and (max-width:960px){
+  .part7 .titlebox .red .left .left_last li:nth-child(5){
+    display: none;
+  }
+  .part7 .titlebox .red .left .best li:nth-child(1),
+  .part7 .titlebox .red .left .best li:nth-child(2) {
+    font-size: 16px;
+  }
+}
+
+
+
+/* 모바일 0~880 ,미디어쿼리 */
+@media screen and (max-width:880px) {
+  header h1 {
+    margin-top: 20px;
+  }
+
+  header .centerbox {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header .centerbox nav .gnb li a {
+    font-size: 1em;
+  }
+
+  #main header .centerbox nav .gnb {
+    display: flex;
+    gap: 50px;
+  }
+
+  #main #visual .textbox .title p {
+    text-align: center;
+    letter-spacing: -2px;
+  }
+
+  #main #visual .textbox .title p span {
+    font-family: 'Paperlogy-6SemiBold';
+    font-size: 50px;
+    position: relative;
+  }
+
+  #main #visual .textbox .title p span:nth-child(2) {
+    margin-left: -10px;
+  }
+
+  #main #visual .textbox .title {
+    font-size: 40px
+  }
+
+  #main #visual .imgbox {
+    display: flex;
+  }
+
+  #main #sectionbox .part1 .alphabet {
+    display: none;
+  }
+
+  .sectionbox .part1 .text1 {
+    font-size: 40px;
+  }
+
+  .sectionbox .part1 .part1_box li img {
+    width: 500px;
+  }
+
+  #main #sectionbox .part1 .part1_box li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #main #sectionbox .part1 .part1_box li img {
+    width: 90%;
+  }
+
+  #main .part2 .centerbox .content li {
+    margin-right: 0px;
+    margin-bottom: 50px;
+  }
+
+  #main .part2 .centerbox .content li figure {
+    padding-bottom: 0;
+  }
+
+  #main .part4 .aiimg img {
+    text-align: center;
+    width: 80%;
+  }
+
+  #main .part4 .centerbox2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #main .part4 .centerbox2 .box {
+    width: 90%;
+  }
+
+  #main .part4 .centerbox2 .box li h2 {
+    font-size: 24px;
+    margin: 30px 0;
+  }
+
+  #main .part4 .centerbox2 .box li p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  #main .part4 .centerbox2 .box li:nth-child(3) {
+    font-size: 16px;
+    margin-top: 16px;
+  }
+
+  #main .part4 .bnt {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+    font-size: 20px;
+    margin-top: 60px;
+    margin-bottom: 100px;
+  }
+
+  #main .part4 .bnt a {
+    font-size: 20px;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  #main .part4 .centerbox3 iframe {
+    width: 100%;
+    height: 200px;
+  }
+
+  #main .part4 .centerbox3 span {
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  #main .part4 .aiimg {
+    margin-top: 100px;
+  }
+
+  #main .part6 .phone_1 {
+    display: none;
+  }
+
+  #main .part6 .phone_2 {
+    display: none;
+  }
+
+  #main .part6 .star {
+    display: none;
+  }
+
+  #main .part6 .text_box p:last-child {
+    top: 350px;
+  }
+  .part7 .titlebox .title {display: flex; flex-direction: column; text-align: center;}
+  .part7 .titlebox .red {}
+  .part7 .titlebox .blue {}
+  .text_last {font-size: 18px;}
+  .part7 .titlebox .red,
+  .part7 .titlebox .blue {
+    flex-direction: column;
+    height: auto; /* 자동 높이 */
+  }
+
+  .part7 .titlebox .red .right,
+  .part7 .titlebox .blue .right {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .part7 .titlebox .red .right li:nth-child(4),
+  .part7 .titlebox .blue .right li:nth-child(4) {
+    position: static;
+    margin: 20px auto 0;
+    display: inline-block;
+  }
+
+}
+
+
+
+/* 모바일 (768px 이하 → 더 간결하게) */
+@media (max-width: 768px) {
+  #main header .centerbox nav .gnb li a {
+    font-size: 16px;
+  }
+
+  #main #sectionbox .part1 .part1_box .text1 {
+    font-size: 40px;
+  }
+
+  .part3 .centerbox h2 {
+    font-size: 26px;
+    line-height: 1.4;
+    padding: 0 20px;
+  }
+
+  .part3 .centerbox h2 .s_text {
+    font-size: 16px;
+  }
+
+  .part3 .centerbox .content {
+    padding: 40px 20px;
+    gap: 40px;
+  }
+
+  .part3 .centerbox .content li strong {
+    font-size: 22px;
+    line-height: 1.4;
+  }
+
+  .part3 .centerbox .content li p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .part3 .graph_box {
+    max-width: 280px;
+  }
+
+  .part3 .graph_box .graph li {
+    width: 50%;
+  }
+
+  .part3 .graph_box .title {
+    font-size: 14px;
+    gap: 20px;
+  }
+
+  .part3 .graph_box .graph>li .gra {
+    font-size: 14px;
+    padding-top: 5px;
+  }
+
+  .part3 .graph_wrap .text {
+    position: static;
+    /* 오른쪽 상단 고정 대신 아래쪽으로 */
+    margin-top: 10px;
+    font-size: 12px;
+    color: #bbb;
+  }
+
+  #main .part4 .centerbox1 .textbox {
+    margin-top: 100px;
+  }
+
+  #main .part4 .centerbox1 .textbox p:nth-child(1) {
+    font-size: 24px;
+  }
+
+  #main .part4 .centerbox1 .textbox p:nth-child(2) {
+    font-size: 36px;
+  }
+
+  #main .part4 .centerbox1 .num li {
+    width: 80px;
+    height: 100px;
+    font-size: 50px;
+    line-height: 100px;
+  }
+
+  #main .part4 .centerbox1 .text {
+    font-size: 18px;
+    margin-top: 40px;
+  }
+
+  #main .part4 .centerbox1 .stamp {
+    display: none;
+  }
+
+  #main .part6 {
+    min-height: auto;
+    padding: 80px 20px;
+  }
+
+  #main .part6 .text_box em {
+    font-size: 20px;
+  }
+
+  #main .part6 .text_box p {
+    font-size: 28px;
+  }
+
+  #main .part6 .text_box p:last-child {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  .part7 .titlebox .red .left .best li,
+  .part7 .titlebox .blue .left li:nth-child(1) {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  .part7 .titlebox .red .left .left_last li:nth-child(1),
+  .part7 .titlebox .blue .left li:nth-child(2) {
+    font-size: 28px; /* 상품명 */
+  }
+
+  .part7 .titlebox .red .left .left_last li,
+  .part7 .titlebox .blue .left li {
+    font-size: 14px; /* 설명글 */
+  }
+
+  .part7 .titlebox .red .right li:nth-child(3),
+  .part7 .titlebox .blue .right li:nth-child(3) {
+    font-size: 24px; /* 가격 */
+  }
+
+  .part7 .titlebox .red .right li:nth-child(4),
+  .part7 .titlebox .blue .right li:nth-child(4) {
+    font-size: 16px;
+    padding: 12px 100px;
+  }
+  .part7 .titlebox .red .right li figure img,
+  .part7 .titlebox .blue .right li figure img  {
+    width: 70%;
+  }
+  .part7 .titlebox .red .right li:nth-child(2),
+  .part7 .titlebox .red .right li:nth-child(3),
+  .part7 .titlebox .blue .right li:nth-child(2),
+  .part7 .titlebox .blue .right li:nth-child(3){
+    padding-top: 0;
+  }
+
+}
